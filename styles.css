@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.box{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(32, 32, 32, 0.603);
+    padding: 20px 20px;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.musica{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.deezer{
+    margin-right: 15px;
+}
+
+.musicas{
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
