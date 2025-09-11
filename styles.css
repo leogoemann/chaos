@@ -57,3 +57,41 @@ ul{
     border: 2px solid rgb(255, 235, 235);
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+    .box {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        padding: 15px;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 500px;
+    }
+
+    ul {
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .musica, .deezer, .musicas {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 10px;
+    }
+
+    .musica, .deezer, .musicas {
+        width: 40px;
+        height: 40px;
+    }
+}
