@@ -1,97 +1,81 @@
-body{
-    background-color: black;
-    color: white;
-    background-image: url(imgs/Adobe\ Express\ -\ background.gif);
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Metal+Mania&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-image: url(images/bg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-family: "Libertinus Serif Display", system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
 }
 
-.box{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(32, 32, 32, 0.603);
-    padding: 20px 20px;
-    border-radius: 20px;
-    justify-content: center;
-    text-align: center;
-    /* background-image: url(imgs/Adobe\ Express\ -\ gifchaos.gif);
-    background-repeat: no-repeat;
-    background-size: cover; */
+.container {
+  position: relative;
+  max-width: 400px;
+  width: 90%;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
+#icone-som {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -100%);
+  cursor: pointer;
+  font-size: 24px;
+  padding-bottom: 15px;
 }
 
-.musica{
-    border-radius: 50%;
-    margin-right: 15px;
-    filter: grayscale(0);
-    transition: 0.5s;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
-.musica:hover, .deezer:hover, .musicas:hover{
-    filter: grayscale(1);
-    transform: scale(1.1);
+h2, a {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 
-.deezer{
-    margin-right: 15px;
-    filter: grayscale(0);
-    transition: 0.5s;
+h2 a:hover {
+  color: #ff0000ff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  justify-content: center;
+  align-items: center;
 }
 
-.musicas{
-    margin-right: 15px;
-    background-color: white;
-    filter: grayscale(0);
-    border-radius: 50%;
-    transition: 0.5s;
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  max-width: 350px;
 }
 
-.capa{
-    border: 2px solid rgb(255, 235, 235);
-    border-radius: 5px;
+.links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 24px;
+  transition: transform 0.3s ease
 }
 
-@media (max-width: 768px) {
-    .box {
-        position: static;
-        transform: none;
-        margin: 20px auto;
-        padding: 15px;
-        margin: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 400px;
-        height: 500px;
-    }
-
-    ul {
-        flex-direction:row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .musica, .deezer, .musicas {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .box {
-        padding: 10px;
-    }
-
-    .musica, .deezer, .musicas {
-        width: 40px;
-        height: 40px;
-    }
+.links a:hover {
+  transform: scale(1.1);
 }
