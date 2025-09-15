@@ -48,7 +48,7 @@ h2, a {
 h2 a:hover {
   color: #ff0000ff;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
 }
