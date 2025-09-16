@@ -20,15 +20,6 @@ body {
   width: 90%;
 }
 
-#icone-som {
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, -100%);
-  cursor: pointer;
-  font-size: 24px;
-  padding-bottom: 15px;
-}
-
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
