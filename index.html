@@ -54,6 +54,11 @@
       <a href="https://music.amazon.com.br/artists/B0FQ4DSS6P/chaos-fanatic" aria-label="Amazon Music"><i class="fa-brands fa-amazon"></i></a>
     </div>
   </div>
-</body>
-
+    <footer> chaos fanatic &copy; <span id="current-year"></span> </footer>
+    <script>
+        const yearSpan = document.getElementById('current-year');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    </script>
+  </body>
 </html>
