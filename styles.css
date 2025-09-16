@@ -68,3 +68,12 @@ h2 a:hover {
 .links a:hover {
   transform: scale(1.1);
 }
+
+footer {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  color: #eee6d9;
+  font-size: 0.8rem;
+}
