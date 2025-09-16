@@ -34,14 +34,12 @@ h2, a {
   color: #eee6d9;
   justify-content: center;
   align-items: center;
+  transition: color 0.25s ease;
 }
 
 h2 a:hover {
-  color: #ff0000ff;
+  color: #f70000;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
-  justify-content: center;
-  align-items: center;
 }
 
 .links {
