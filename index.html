@@ -40,9 +40,30 @@
   <div class="container">
     <h1>CHAOS FANATIC</h1>
     <h2>
-      <a href="https://youtu.be/JIdQf_eNYng?si=KTTyvSvvGB3NGm5t">'Responsável Por Existir' OUT NOW</a>
+      <a href="https://youtu.be/JIdQf_eNYng?si=KTTyvSvvGB3NGm5t">'Responsável Por Existir'</a>
+      <p id="demo"></p>
+     <script>
+        var countDownDate = new Date("Sep 23, 2025 19:00:00").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+        
+          var distance = countDownDate - now;
+        
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+          document.getElementById("demo").innerHTML = "clipe disponível em [" + days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s]";
+          
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
     </h2>
-
     <div class="links">
       <a href="https://x.com/CHAOSFNTC?t=1235pvw5v8H4EDZNbwWOpg&s=08" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
       <a href="https://www.instagram.com/chaos.fanatic/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
